@@ -1,0 +1,17 @@
+<% include header %>
+
+<h2>Add List</h2>
+
+<form method="post" role="form">
+	<div class="form-group">
+		<label for="title">List Topic</label>
+		<input type="text" class="form-control" id="title" name="title" placeholder="Enter list topic here." required>
+		<label for="body">List Entries (Comma Separated)</label>		
+		<textarea class="form-control" rows="100" id="body" name="body" placeholder="Put list entries here. (Comma Separated)"></textarea>
+	</div>
+	<div class="form-group">
+		<input type="submit" value="Create List" class="btn btn-primary"> 
+	</div>
+</form>
+
+<% include footer %>

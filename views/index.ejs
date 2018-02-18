@@ -1,0 +1,19 @@
+<% include header %>
+<% if(lists.length){ %>
+	<% lists.forEach(function(list){ %>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="text-muted pull-right">
+				<%= list.published %>
+			</div>
+			<%= list.title %>
+		</div>
+		<div class="panel-body">
+			<%= list.body %>
+		</div>	
+	</div>
+	<% }) %>
+	<% } else { %>
+	No lists! <a href="/new-topic">Add a list?</a>
+	<% } %>
+<% include footer %>
